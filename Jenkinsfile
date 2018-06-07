@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('compile ') {
       steps {
-        echo 'Compilation started..'
+        echo 'Compilation started by ${MY_NAME}'
       }
     }
     stage('dosomething ') {
@@ -13,5 +13,8 @@ pipeline {
         sh 'java -version '
       }
     }
+  }
+  environment {
+    MY_NAME = 'TIBCO'
   }
 }
