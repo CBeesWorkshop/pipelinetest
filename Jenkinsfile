@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('compile ') {
       steps {
-        echo "Compilation started by ${MY_NAME}"
+        echo "Compilation started by ${param.Name}"
         echo "${TEST_USER_USR}"
         echo "${TEST_USER_PSW}"
       }
