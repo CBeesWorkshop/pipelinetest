@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('compile ') {
       steps {
-        echo 'Compilation started by ${MY_NAME}'
+        echo "Compilation started by ${MY_NAME}"
       }
     }
     stage('dosomething ') {
